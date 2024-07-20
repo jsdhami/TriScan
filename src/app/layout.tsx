@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "TriScan | Tri-Chandra Research Group",
-  description: "A Plagrism Checker Software for Research by Tri-Chandra Research Group",
+  description: "A Plagiarism Checker Software for Research by Tri-Chandra Research Group",
 };
 
 export default function RootLayout({
