@@ -35,10 +35,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Know More About Tri-Chandra Research Group 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tri-Chandra Research Group: Innovate, Learn, Share. Join us in exploring new horizons through collaborative research.[TC-Research Group](https://www.facebook.com/TriChandraResearchGroup)
 
 Visit TC-Research Group Social Media Links:
-- [Follow on Facebook](https://facebook.com/TriChandraResearchGroup)
+- [Follow on Facebook](https://www.facebook.com/TriChandraResearchGroup)
 - [Follow on LinkedIn](https://www.linkedin.com/company/tc-researchgroup)
 - [Follow on WhatsApp](https://whatsapp.com/channel/0029VafGv4e5K3zbbFNfl42s)
 - [Subscribe on YouTube (SciTech Nepal)](https://www.youtube.com/@SciTechNepal?sub_confirmation=1)
