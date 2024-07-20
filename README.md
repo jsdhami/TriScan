@@ -1,4 +1,5 @@
-## TriScan | A Plagiarism Checker Open Source and Free Software for Research by Tri-Chandra Research Group
+## TriScan
+A Plagiarism Checker Open Source and Free Software for Research by Tri-Chandra Research Group
 
 ## How to Contribute on TriScan?
 First, clone code repository on your local device
