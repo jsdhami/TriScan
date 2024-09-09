@@ -4,11 +4,11 @@ A Plagiarism Checker Open Source and Free Software for Research by Tri-Chandra R
 ## How to Contribute on TriScan?
 First, clone code repository on your local device
 ```bash
-git clone https://github.com/tc-researchgroup/TriScan-Frontend.git
+git clone https://github.com/jsdhami/TriScan.git
 ```
 then,
 ```bash
-cd TriScan-Frontend
+cd TriScan
 ```
 run the development server:
 
@@ -25,18 +25,9 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
 ## Know More About Tri-Chandra Research Group 
 
-Tri-Chandra Research Group: Innovate, Learn, Share. Join us in exploring new horizons through collaborative research.[TC-Research Group](https://www.facebook.com/TriChandraResearchGroup)
+Tri-Chandra Research Group: Innovate, Learn, Share. Join us in exploring new horizons through collaborative research. [TC-Research Group](https://www.facebook.com/TriChandraResearchGroup)
 
 Visit TC-Research Group Social Media Links:
 - [Follow on Facebook](https://www.facebook.com/TriChandraResearchGroup)
