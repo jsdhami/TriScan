@@ -1,46 +1,64 @@
-## TriScan | Tri-Chandra Research Group
-A Plagiarism Checker Open Source and Free Software for Research by Tri-Chandra Research Group
+<div align="center"><strong>Next.js 14 Admin Dashboard Template</strong></div>
+<div align="center">Built with the Next.js App Router</div>
+<br />
+<div align="center">
+<a href="https://next-admin-dash.vercel.app/">Demo</a>
+<span> · </span>
+<a href="https://vercel.com/templates/next.js/admin-dashboard-tailwind-postgres-react-nextjs">Clone & Deploy</a>
+<span>
+</div>
 
-## How to Contribute on TriScan?
-First, clone code repository on your local device
-```bash
-git clone https://github.com/tc-researchgroup/TriScan-Frontend.git
+## Overview
+
+This is a starter template using the following stack:
+
+- Framework - [Next.js (App Router)](https://nextjs.org)
+- Language - [TypeScript](https://www.typescriptlang.org)
+- Auth - [Auth.js](https://authjs.dev)
+- Database - [Postgres](https://vercel.com/postgres)
+- Deployment - [Vercel](https://vercel.com/docs/concepts/next.js/overview)
+- Styling - [Tailwind CSS](https://tailwindcss.com)
+- Components - [Shadcn UI](https://ui.shadcn.com/)
+- Analytics - [Vercel Analytics](https://vercel.com/analytics)
+- Formatting - [Prettier](https://prettier.io)
+
+This template uses the new Next.js App Router. This includes support for enhanced layouts, colocation of components, tests, and styles, component-level data fetching, and more.
+
+## Getting Started
+
+During the deployment, Vercel will prompt you to create a new Postgres database. This will add the necessary environment variables to your project.
+
+Inside the Vercel Postgres dashboard, create a table based on the schema defined in this repository.
+
 ```
-then,
-```bash
-cd TriScan-Frontend
+CREATE TYPE status AS ENUM ('active', 'inactive', 'archived');
+
+CREATE TABLE products (
+  id SERIAL PRIMARY KEY,
+  image_url TEXT NOT NULL,
+  name TEXT NOT NULL,
+  status status NOT NULL,
+  price NUMERIC(10, 2) NOT NULL,
+  stock INTEGER NOT NULL,
+  available_at TIMESTAMP NOT NULL
+);
 ```
-run the development server:
+
+Then, uncomment `app/api/seed.ts` and hit `http://localhost:3000/api/seed` to seed the database with products.
+
+Next, copy the `.env.example` file to `.env` and update the values. Follow the instructions in the `.env.example` file to set up your GitHub OAuth application.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+npm i -g vercel
+vercel link
+vercel env pull
+```
+
+Finally, run the following commands to start the development server:
+
+```
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Know More About Tri-Chandra Research Group 
-
-Tri-Chandra Research Group: Innovate, Learn, Share. Join us in exploring new horizons through collaborative research.[TC-Research Group](https://www.facebook.com/TriChandraResearchGroup)
-
-Visit TC-Research Group Social Media Links:
-- [Follow on Facebook](https://www.facebook.com/TriChandraResearchGroup)
-- [Follow on LinkedIn](https://www.linkedin.com/company/tc-researchgroup)
-- [Follow on WhatsApp](https://whatsapp.com/channel/0029VafGv4e5K3zbbFNfl42s)
-- [Subscribe on YouTube (SciTech Nepal)](https://www.youtube.com/@SciTechNepal?sub_confirmation=1)
-- [Subscribe on YouTube](https://www.youtube.com/@Tri-ChandraResearchGroup?sub_confirmation=1)
+You should now be able to access the application at http://localhost:3000.
