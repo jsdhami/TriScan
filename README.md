@@ -10,6 +10,15 @@ then,
 ```bash
 cd TriScan
 ```
+Install node_modules
+```bash
+pnpm install
+```
+Or,
+```bash
+npm install
+```
+
 run the development server:
 
 ```bash
