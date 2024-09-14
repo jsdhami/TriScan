@@ -37,7 +37,7 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-## Know More About Tri-Chandra Research Group 
+## Know More
 
 Tri-Chandra Research Group: Innovate, Learn, Share. Join us in exploring new horizons through collaborative research. [TC-Research Group](https://www.facebook.com/TriChandraResearchGroup)
 
