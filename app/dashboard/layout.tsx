@@ -32,6 +32,7 @@ import { SearchInput } from './search';
 import { GiLightningTrio } from "react-icons/gi";
 import { auth } from "@/lib/auth/auth"
 import { NextRequest } from 'next/server';
+import Unauthorized from '@/components/unauthorized/unauthorized';
 
 export default async function DashboardLayout({
   children
@@ -39,7 +40,7 @@ export default async function DashboardLayout({
   children: React.ReactNode;
 }) {
   const session = await auth()
-  if (!session) return <div>Not authenticated</div> 
+  if (!session) return <Unauthorized/>
   return (
     <Providers>
      <main className="flex min-h-screen w-full flex-col bg-muted/40">
