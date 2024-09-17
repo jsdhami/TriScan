@@ -30,7 +30,6 @@ import Providers from './providers';
 import { NavItem } from './nav-item';
 import { SearchInput } from './search';
 import { GiLightningTrio } from "react-icons/gi";
-import { useSession, signIn, signOut } from "next-auth/react"
 import { auth } from "@/lib/auth/auth"
 
 export default async function DashboardLayout({
@@ -38,7 +37,6 @@ export default async function DashboardLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
   const session = await auth()
   if (!session) return <div>Not authenticated</div> 
   return (
@@ -66,14 +64,14 @@ function DesktopNav() {
     <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
       <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
         <Link
-          href="https://triscan.tcresearchgroup.edu.np"
+          href="/"
           className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
         >
           <GiLightningTrio className="h-3 w-3 transition-all group-hover:scale-110" />
           <span className="sr-only">TriScan</span>
         </Link>
 
-        <NavItem href="#" label="Dashboard">
+        <NavItem href="/dashboard" label="Dashboard">
           <Home className="h-5 w-5" />
         </NavItem>
 

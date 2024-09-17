@@ -8,14 +8,14 @@ import {
 } from '@/components/ui/card';
 import { signIn } from '@/lib/auth/auth';
 
-export default function LoginPage() {
+export default function SigninPage() {
   return (
     <div className="min-h-screen flex justify-center items-start md:items-center p-8">
       <Card className="w-full max-w-sm">
         <CardHeader>
-          <CardTitle className="text-2xl">Login</CardTitle>
+          <CardTitle className="text-2xl">Sign In</CardTitle>
           <CardDescription>
-            Log in for accesing the dashboard.
+            Sign in for accesing the dashboard.
           </CardDescription>
         </CardHeader>
         <CardFooter>
@@ -35,3 +35,4 @@ export default function LoginPage() {
     </div>
   );
 }
+

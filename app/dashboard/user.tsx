@@ -55,7 +55,7 @@ export async function User() {
           </DropdownMenuItem>
         ) : (
           <DropdownMenuItem>
-            <Link href="/login">Sign In</Link>
+            <Link href="/signin">Sign In</Link>
           </DropdownMenuItem>
         )}
       </DropdownMenuContent>

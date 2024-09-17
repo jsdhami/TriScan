@@ -1,6 +1,6 @@
 import './globals.css';
 
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'TriScan | Tri-Chandra Research Group',
