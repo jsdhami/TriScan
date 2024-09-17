@@ -8,7 +8,9 @@ const header = async () => {
     <>
       <div className="flex backdrop-blur-3xl bg-white/30 sm:px-60 px-5 border-b sm:pt-4 pt-4 pb-4 sticky top-0 z-30">
         <div className="flex-1">
-          <GiLightningTrio className='sm:translate-x-6 rounded-md h-10 w-10' />
+          <Link href="/" className="flex items-center space-x-2">
+             <GiLightningTrio className='sm:translate-x-6 rounded-md h-10 w-10' />
+          </Link>
         </div>
 
         <div className="flex-none">

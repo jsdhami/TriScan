@@ -8,8 +8,10 @@ import {
 } from '@/components/ui/card';
 import { signIn } from '@/lib/auth/auth';
 
+
 export default function SigninPage() {
   return (
+   <>
     <div className="min-h-screen flex justify-center items-start md:items-center p-8">
       <Card className="w-full max-w-sm">
         <CardHeader>
@@ -33,6 +35,7 @@ export default function SigninPage() {
         </CardFooter>
       </Card>
     </div>
+   </>
   );
 }
 
