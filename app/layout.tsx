@@ -1,6 +1,4 @@
 import './globals.css';
-import Footer from '../components/footer/footer'
-import Header from '../components/header/header'
 // import { Analytics } from '@vercel/analytics/react';
 import { SessionProvider } from "next-auth/react"
 export const metadata = {
@@ -18,9 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex min-h-screen w-full flex-col">
       <SessionProvider>
-      <Header/>
         {children}
-      <Footer/>
       </SessionProvider>
       </body>
     </html>
