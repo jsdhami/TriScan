@@ -14,7 +14,7 @@ import { TableCell, TableRow } from '@/components/ui/table';
 import { deleteProduct } from './actions';
 const SelectProduct = {
   imageUrl: 'hrrps://go.com',
-  name: 'Hello Jank',
+  name: 'Hello Janak',
   status: 'Buied',
   price: 550,
   stock: 0,
