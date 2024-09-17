@@ -15,7 +15,7 @@ export default function LoginPage() {
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
           <CardDescription>
-            This demo uses GitHub for authentication.
+            Log in for accesing the dashboard.
           </CardDescription>
         </CardHeader>
         <CardFooter>
@@ -23,7 +23,7 @@ export default function LoginPage() {
             action={async () => {
               'use server';
               await signIn('github', {
-                redirectTo: '/'
+                redirectTo: '/dashboard'
               });
             }}
             className="w-full"
