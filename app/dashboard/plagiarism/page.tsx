@@ -8,9 +8,9 @@ import {
     
     export default function Plagiarism() {
       return (
-        <Card>
+        <Card className='min-h-screen'>
           <CardHeader>
-            <CardTitle>Customers</CardTitle>
+            <CardTitle>Plagirism Check</CardTitle>
             <CardDescription>View all customers and their orders.</CardDescription>
           </CardHeader>
           <CardContent></CardContent>
