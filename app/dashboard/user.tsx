@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
 import Link from 'next/link';
+import { redirect } from 'next/dist/server/api-utils';
 
 export async function User() {
   let session = await auth();
@@ -38,7 +39,12 @@ export async function User() {
         <DropdownMenuItem>Settings</DropdownMenuItem>
         <DropdownMenuItem>Support</DropdownMenuItem>
         <DropdownMenuSeparator />
-        {user ? (
+        {!user ? (
+          <DropdownMenuItem>
+          <Link href="/signin">Sign In</Link>
+        </DropdownMenuItem>
+          
+        ) : (
           <DropdownMenuItem>
             <form
               action={async () => {
@@ -52,10 +58,6 @@ export async function User() {
             >
               <button type="submit">Sign Out</button>
             </form>
-          </DropdownMenuItem>
-        ) : (
-          <DropdownMenuItem>
-            <Link href="/signin">Sign In</Link>
           </DropdownMenuItem>
         )}
       </DropdownMenuContent>

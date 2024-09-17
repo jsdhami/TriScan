@@ -1,11 +1,9 @@
-"use client"
 import React from 'react'
 import Link from 'next/link'
 import { GiLightningTrio } from "react-icons/gi";
-import { useSession } from "next-auth/react"
-
-const header = () => {
-  const { data: session } = useSession()
+import { auth } from "@/lib/auth/auth"
+const header = async () => {
+  const session = await auth()
   return (
     <>
       <div className="flex backdrop-blur-3xl bg-white/30 sm:px-60 px-5 border-b sm:pt-4 pt-4 pb-4 sticky top-0 z-30">
