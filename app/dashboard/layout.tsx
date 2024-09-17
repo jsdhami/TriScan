@@ -30,12 +30,15 @@ import Providers from './providers';
 import { NavItem } from './nav-item';
 import { SearchInput } from './search';
 import { GiLightningTrio } from "react-icons/gi";
+import { useSession, signIn, signOut } from "next-auth/react"
 
 export default function DashboardLayout({
   children
 }: {
   children: React.ReactNode;
 }) {
+  const { data: session } = useSession()
+  if(session) {
   return (
     <Providers>
       <main className="flex min-h-screen w-full flex-col bg-muted/40">
@@ -54,6 +57,7 @@ export default function DashboardLayout({
       </main>
     </Providers>
   );
+}
 }
 
 function DesktopNav() {
