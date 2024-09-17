@@ -17,7 +17,7 @@ export default function SigninPage() {
         <CardHeader>
           <CardTitle className="text-2xl">Sign In</CardTitle>
           <CardDescription>
-            Sign in for accesing the dashboard.
+            Sign in with the valid details.
           </CardDescription>
         </CardHeader>
         <CardFooter>

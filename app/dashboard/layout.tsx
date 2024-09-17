@@ -31,6 +31,7 @@ import { NavItem } from './nav-item';
 import { SearchInput } from './search';
 import { GiLightningTrio } from "react-icons/gi";
 import { auth } from "@/lib/auth/auth"
+import { NextRequest } from 'next/server';
 
 export default async function DashboardLayout({
   children
@@ -168,24 +169,25 @@ function MobileNav() {
   );
 }
 
+
 function DashboardBreadcrumb() {
   return (
     <Breadcrumb className="hidden md:flex">
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
-            <Link href="#">Dashboard</Link>
+            <Link href="/dashboard">Dashboard</Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
-            <Link href="#">Products</Link>
+            <Link href="#">Plagiarism</Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage>All Products</BreadcrumbPage>
+          <BreadcrumbPage>All Articles</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
